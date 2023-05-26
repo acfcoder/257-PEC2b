@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="assets/styles/main.scss" />
+    <script type="module" src="app.js"></script>
+    <title>El Lago</title>
+</head>
+
+<body>
+    <header>
+        <picture class="header__picture">
+            <source media="(min-width: 951px )" srcset="./assets/img/albufera-l.jpg">
+            <source media="(min-width: 500px )" srcset="./assets/img/albufera-m.jpg">
+            <img src="./assets/img/albufera-s.jpg" alt="Lago de la Albufera">
+        </picture>
+
+    </header>
+
+    <include src="assets/views/header.html"></include>
+
+    <main>
+        <h1>El lago</h1>
+        <p>
+            El lago de la Albufera es la joya principal de este paraje natural. Con una superficie de más de 2.000
+            hectáreas, este lago de agua dulce es el más grande de España. Es el hogar de una rica variedad de especies
+            de aves acuáticas y plantas, así como de una gran cantidad de peces y otros animales. El lago se alimenta
+            principalmente de agua dulce que proviene de los ríos Júcar y Túria y los barrancos que lo rodean.
+        </p>
+        <p>
+            El lago es muy rico en biodiversidad con varias rutas de ciclismo y senderismo.También es un lugar ideal
+            para la observación de aves, especialmente durante los meses de migración, cuando se pueden avistar muchas
+            especies diferentes. Además, los paseos en barca por el lago son una actividad popular y relajante,
+            ofreciendo una vista impresionante del paisaje y la fauna.
+        </p>
+        <div class="article__img">
+            <img src="./assets/img/albufera-atardecer.jpg" alt="Foto de Loli Gavilán. L'albufera">
+            <span class="credito">Loli Gavilán</span>
+        </div>
+
+    </main>
+    <footer>
+
+        <include src="./assets/views/footer.html"></include>
+
+    </footer>
+    <div class="copy">
+        &copy; Antoni Collado Folch
+    </div>
+</body>
+
+</html>

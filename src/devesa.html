@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="assets/styles/main.scss" />
+    <script type="module" src="app.js"></script>
+    <title>La Devesa</title>
+</head>
+
+<body>
+    <header>
+        <picture class="header__picture">
+            <source media="(min-width: 951px )" srcset="./assets/img/devesa-l.jpg">
+            <source media="(min-width: 500px )" srcset="./assets/img/devesa-m.jpg" alt="Jesus Villarreal">
+            <img src="./assets/img/devesa-s.jpg" alt="foto de Artfolc">
+        </picture>
+    </header>
+
+    <include src="assets/views/header.html"></include>
+
+    <main>
+        <h1>La Devesa</h1>
+        <p>
+            La Devesa de el Saler en una restinga dunar y de bosque mediterráneo que separa las aguas del mar
+            Mediterráneo de las aguas dulces de la laguna de la Albufera.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus vero asperiores amet iusto sunt rem
+            inventore modi. Enim id, qui aut atque rem eos fugit soluta, quasi ex minima reiciendis. Lorem ipsum dolor
+            sit amet consectetur, adipisicing elit. Praesentium fugit, sunt consequuntur, nesciunt pariatur sit eligendi
+            animi ut, porro similique ducimus amet esse repellendus illum! Cupiditate commodi quisquam dolor sit!
+        </p>
+        <div class="article__img">
+            <img src="./assets/img/devesa-img.jpg" alt="foto de Fina Alcalá de El Saler">
+            <span class="credito">Fina Alcalá</span>
+        </div>
+    </main>
+</body>
+<footer>
+
+    <include src="./assets/views/footer.html"></include>
+
+</footer>
+<div class="copy">
+    &copy; Antoni Collado Folch
+</div>
+
+</html>
