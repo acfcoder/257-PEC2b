@@ -154,6 +154,9 @@ header {
 
 .header__picture {
   display: block;
+  img {
+    height: auto !important;
+  }
 }
 
 main,
@@ -326,7 +329,7 @@ svg circle:hover {
 .copy {
   clear: both;
   text-align: center;
-  color: var(--highline);
+  color: var(--negro);
   font-weight: 400;
   font-size: 0.8em;
   padding: 0.8em;
