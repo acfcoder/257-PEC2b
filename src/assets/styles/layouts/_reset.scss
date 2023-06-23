@@ -1,0 +1,161 @@
+:root {
+    /* Colores */
+    --negro: #242424;
+    --st-font: helvetica, arial, sans-serif;
+    --nd-font: verdana;
+}
+
+$negro: #242424;
+
+/* Las adaptamos al modo oscuro */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --negro: #ececec;
+    }
+}
+
+/* Configuramos si un usuario ha activado el modo alto contraste. (WD) */
+
+@media (prefers-contrast: high) {
+    :root {}
+}
+
+/*  Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* Reseteamos los margin y paddings de todas las etiquetas */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    border: 0;
+}
+
+*::before,
+*::after {
+    display: block;
+}
+
+/* Images */
+img,
+picture,
+video,
+iframe,
+figure {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+/* Deactivate texts labels styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Enlaces */
+a {
+    display: block;
+    font-size: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+p a {
+    display: inline;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* smooth anchors */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*  pseudoelements' quotes */
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: '';
+    content: none;
+}
+
+/* selected text */
+::selection {
+    color: var(--blanco);
+    background-color: var(--negro);
+}
+
+/* forms */
+form,
+input,
+textarea,
+select,
+button,
+label {
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    hyphens: none;
+    color: inherit;
+    background-color: transparent;
+    appearance: none;
+}
+
+/* tables */
+table,
+tr,
+td {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+/* SVG */
+svg {
+    display: block;
+    width: 100%;
+}
+
+/* Configuramos la tipografía para toda la web */
+body {
+    min-height: 100vh;
+    font-family: var(--tipo-principal);
+    font-size: 100%;
+    hyphens: none;
+    color: var(--negro);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

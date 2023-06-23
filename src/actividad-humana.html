@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="assets/styles/main.scss" />
+    <script type="module" src="app.js"></script>
+    <title>Actividades humanas en l'Albufera</title>
+</head>
+
+<body>
+    <header>
+        <picture class="header__picture">
+            <source media="(min-width: 951px )" srcset="./assets/img/ah-l.jpg">
+            <source media="(min-width: 500px )" srcset="./assets/img/ah-m.jpg">
+            <img src="./assets/img/ah.jpg" alt="Albufera al atardecer">
+        </picture>
+    </header>
+
+    <include src="assets/views/header.html"></include>
+
+    <main>
+        <h1>Actividad humana</h1>
+        <p>
+            Alrededor del lago de la Albufera se han desarrollado desde antiguo múltiples alctividades humanas.
+            Tradicionalmente se ha explotado la pesca en sus aguas, la caza y los cultivos en sus orillas. A partir del
+            siglo XIX los agricultores ganan terreno a la laguna y se comienza el cultivo extensivo de arroz. Los
+            arrozales tienen hoy una gran extensión e improtancia económica.</p>
+        <p>
+            A partir de finales del siglo XX, se inicia un gran número de acciones para su conservación incluyendo la
+            retirada de varios proyectos urbanísticos. El valor paisajístico y la biodiversidad que aloja han
+            contribuido al desarrollo de la industria turística y gastronómica alrededor de sus orillas.
+        </p>
+        <p>
+            De acuerdo con lo anterior, estas son las principales actividades humanas que se desarrollan alrederor del
+            parque natural:
+        </p>
+        <div class="main__iconos">
+            <div>
+                <img src="./assets/img/pesca.png" alt="">
+                <span class="iconos__text">Pesca</span>
+            </div>
+            <div>
+                <img src="./assets/img/caza.png" alt="">
+                <span class="iconos__text">Caza</span>
+            </div>
+            <div class="">
+                <a href="arrozales.html" target="_self">
+                    <img class="animacion" src="./assets/img/arrozales.png" alt="">
+                </a>
+                <span class="iconos__text">Arrozales</span>
+            </div>
+            <div>
+                <img src="./assets/img/turismo.png" alt="">
+                <span class="iconos__text">Turismo</span>
+            </div>
+            <div>
+                <img src="./assets/img/gastronomia.png" alt="">
+                <span class="iconos__text">Gastronomía</span>
+            </div>
+        </div>
+
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic dignissimos omnis temporibus! Expedita
+            praesentium optio itaque rerum excepturi eum incidunt unde minus, aspernatur odio impedit, dolores voluptate
+            voluptatem. Ex, rerum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illum voluptatibus
+            quo commodi dolor ea, voluptatum iusto doloribus optio autem vel magni temporibus nam, accusantium id nobis
+            harum odit ducimus!
+        </p>
+    </main>
+</body>
+<footer>
+
+    <include src="./assets/views/footer.html"></include>
+
+</footer>
+<div class="copy">
+    &copy; Antoni Collado Folch
+</div>
+
+</html>
