@@ -7,15 +7,15 @@ window.onresize = function () {
     myScript();
 }
 
-
-function myScript() {
-    //console.log("funciona ...");
-    let open = document.querySelector("#open");
+ let open = document.querySelector("#open");
     let menuOpen = document.querySelector(".menu-open");
     let mobilMenu = document.querySelector(".header__menu");
     let close = document.querySelector("#close");
     let box = document.querySelector(".header__picture>img");
     let mobilLogo = document.querySelector(".header__logo--mobile");
+
+function myScript() {
+   
 
     let width = box.offsetWidth;
     let openHeight = box.offsetHeight;
