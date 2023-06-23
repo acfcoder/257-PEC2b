@@ -145,8 +145,8 @@ header {
 
 .header__logo,
 .menu__logo {
-  width: 60%;
-  max-width: 280px;
+  width: fit-content;
+  max-width: 300px;
   margin: 2em auto 0;
 
   svg path {
@@ -302,8 +302,7 @@ footer {
 .footer__logo--svg {
   width: fit-content;
   //  height: 110px;
-  padding: 8px;
-  margin: 8px;
+  margin: 14px 8px;
   color: white;
 }
 
