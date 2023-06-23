@@ -29,8 +29,6 @@ function myScript() {
         mobilMenu.style.display = "none";
     });
 
-    document.documentElement.style.setProperty('--highline', '#768394');
-
     window.onscroll = function () {
         var y = window.scrollY;
         if (wW < 796) {
