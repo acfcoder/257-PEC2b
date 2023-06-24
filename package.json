@@ -1,29 +1,23 @@
 {
   "name": "albufera",
-  "version": "1.0.0",
+  "version": "2.1.0",
   "description": "Sitio web sobre la Albufera de Valencia",
   "source": "src/index.html",
   "browserslist": ">0.5%, last 2 versions, not dead",
   "scripts": {
-    "clean": ".parcel-cache",
-    "dev": "npm-run-all clean parcel:serve",
-    "build": "parcel build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel"
+    "start": "parcel",
+    "build": "parcel build"
   },
-  "keywords": [
-    "Valencia",
-    "albufera"
-  ],
-  "author": "Antoni Collado Folch - ACFcoder",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.9.2",
-    "parcel": "^1.12.4",
-    "posthtml-doctype": "^1.1.1",
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.9.2",
     "posthtml-include": "^1.7.4"
   },
   "dependencies": {
-    "npm-run-all": "^4.1.2"
+    "posthtml-doctype": "^1.1.1"
   }
 }
