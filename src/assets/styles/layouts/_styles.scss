@@ -378,9 +378,10 @@ svg circle:hover {
       li {
         margin-left: 1em;
         color: var(--highline);
-        font-size: 2em;
+        font-size: 2rem;
         font-weight: 400;
         font-family: var(--mainfont);
+        line-height: 2.2rem;
 
         a {
           //padding-bottom: .5em;
